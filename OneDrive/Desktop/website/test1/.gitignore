@@ -1,1 +1,28 @@
 variable.py
+# Virtual environments
+venv/
+.env/
+
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Logs
+*.log
+
+# Database
+*.db
+
+# SSL Certificates
+cert.pem
+key.pem
+
+# IDE files
+.vscode/
+.idea/
+
+# System files
+.DS_Store
+Thumbs.db
