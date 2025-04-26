@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>delet</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>delet a Medication</h1>
+       
+      </header>
+      <div class="container" >
+        <h2>delet Medication</h2>
+          <label for="medname">Medication Name:</label>
+          <input type="text" id="medname" name="medname" required />
+        <form action="/delete" method="POST">
+          <button type="submit">delet a Medication</button>
+        </form>
+      </div>
+</body>
+</html>

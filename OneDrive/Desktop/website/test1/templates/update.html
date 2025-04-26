@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>insert your meds</h1>
+      </header>
+      <div class="container">
+        <h2> manage Medication</h2>
+        <form action="/update"  >
+          <label for="medname">Medication Name:</label>
+          <input type="text" id="medname" name="medname" required />
+    
+          <label for="photo">new img of Medication:</label>
+          <input type="file" id="photo" name="photo" accept="image/*" />
+    
+          <label for="time">Time to Take:</label>
+          <select id="time" name="time">
+            <option value="morning">Morning</option>
+            <option value="evening">evening</option>
+            <option value="night">Night</option>
+          </select>
+          
+          <label for="reste">new rest medication</label>
+          <input type="number" id="reste" name="reste" required />
+    
+          <label for="level">Disease Stage (1-3):</label><!-- I don t belive we should insert it with every med --> 
+          <select id="level" name="level">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+    
+            <label for="notes"> new Notes:</label>
+            <textarea id="notes" name="notes" rows="4"></textarea>
+    
+          <button type="submit">change Med</button>
+        </form>
+      </div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #eef3f8;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .dashboard-container {
+      background-color: #fff;
+      width: 100%;
+      max-width: 900px;
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      overflow-y: auto;
+      max-height: 90vh;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+    .section h2 {
+      color: #1976d2;
+      margin-bottom: 15px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+    }
+
+    .card {
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 15px 20px;
+      margin-bottom: 15px;
+    }
+
+    .card strong {
+      display: block;
+      color: #444;
+      margin-bottom: 5px;
+    }
+    .button-row {
+      display: flex;
+      gap: 10px;  /* Space between buttons */
+      margin-bottom: 15px;  /* Space below button row */
+    }
+    .btn {
+      display: inline-block;
+      padding: 6px 12px;
+      background-color: #1976d2;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      text-decoration: none;
+      margin-top: 10px;
+      margin-right: 10px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #135ba1;
+    }
+
+    .logout {
+      text-align: right;
+      margin-bottom: 10px;
+    }
+
+    .logout a {
+      color: #1976d2;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .logout a:hover {
+      text-decoration: underline;
+    }
+

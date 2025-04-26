@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Caregiver Dashboard</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/view.css') }}">
+  
+</head>
+<body>
+
+  <div class="dashboard-box">
+    <div class="logout">
+      <a href="login.html">Logout</a>
+    </div>
+
+    <h1>Caregiver Dashboard</h1>
+    
+        <div class="patient">
+            <h3>Patient: Meriem</h3>
+            <p><strong>Disease Level:</strong> 2</p>
+            <p><strong>Next Medication:</strong> ritalin – Night</p>*
+            <p><strong>medcine missed</strong> ritalin – mornning</p>
+            <div class="button-row">
+              <form action="/insert" >
+                <button type="submit" class="btn" >add a med</button>
+              </form>
+            
+              <form action="/delete" >
+                  <button type="submit" class="btn">delet a med</button>
+              </form>
+            
+              <form action="/update" >
+                  <button type="submit" class="btn" >mange your med</button>
+              </form>
+            
+              <form action="/" >
+                  <button type="submit" class="btn" >home</button>
+              </form>
+            </div>
+            
+          </div>
+      
+          <div class="patient">
+            <h3>Patient: Ahmed</h3>
+            <p><strong>Disease Level:</strong> 1</p>
+            <p><strong>Next Medication:</strong> dolipran – Morning</p>
+            <div class="button-row">
+              <form action="/insert" >
+                <button type="submit" class="btn" >add a med</button>
+              </form>
+            
+              <form action="/delete" >
+                  <button type="submit" class="btn">delet a med</button>
+              </form>
+            
+              <form action="/update" >
+                  <button type="submit" class="btn" >mange your med</button>
+              </form>
+            
+              <form action="/" >
+                  <button type="submit" class="btn" >home</button>
+              </form>
+            
+          </div>
+      
+
+    
+  </div>
+
+</body>
+</html>

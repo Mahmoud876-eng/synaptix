@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Doctor Dashboard</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/doctor.css') }}">
+</head>
+<body>
+
+  <div class="dashboard-container">
+    <div class="logout">
+      <a href="login.html">Logout</a>
+    </div>
+
+    <h1>Doctor Dashboard</h1>
+
+    <!-- Section: Upcoming Reservations -->
+    <div class="section">
+        <h2>Upcoming Reservations</h2>
+        {% for patient in patients %}
+          
+            <div class="card">
+              <strong>Patient:</strong> {{patient.name}}<br>
+              <strong>Date</strong>{{patient.date}}<br>
+              <strong>phone</strong>{{patient.phone}}<br>
+              <p><strong>reason:</strong> {{patient.notes}} </p>
+              <a class="btn" href="#">View</a>
+            </div>
+          
+        {% endfor %}
+    
+    </div>
+   
+
+    <!-- Section: Patients List -->
+    <div class="section">
+      <h2>Patients</h2>
+      
+        {% for patient in patients %}
+          
+          <div class="card">
+            <strong>Patient:</strong> {{patient.name}}<br>      
+            <strong>Age:</strong>{{patient.age}}<br>
+            <strong>Gender:</strong>{{patient.gender}}<br>        
+            <p><strong>phone</strong>{{patient.phone}}<br></p>
+          
+            <div class="button-row">
+              <form action="/files">
+                  <button type="submit" class="btn">Files</button>
+              </form>
+              <form action="/history">
+                 <button type="submit" class="btn">History</button>
+              </form>
+              <form action="/add_notes">
+                  <button type="submit" class="btn">Add Notes</button>
+              </form>
+            </div>  
+          
+     
+          </div>
+            
+          
+        {% endfor %}
+        
+        
+    </div>     
+
+    <!-- Section: Medical Files -->
+    <div class="section">
+      <h2>Medical Files</h2>
+      <div class="card">
+        <strong>Patient:</strong> Sarah Ben Ali
+        <p><strong>Recent Upload:</strong> Brain MRI (PDF)</p>
+        <div class="button-row">
+          <form action="/view_file">
+            <button type="submit" class="btn">View</button>
+          </form>
+          <form action="/upload_file">
+            <button type="submit" class="btn">Upload New</button>
+          </form>
+
+        </div>
+     </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

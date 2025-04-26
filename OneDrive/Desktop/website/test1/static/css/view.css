@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .dashboard-box {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 600px;
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+  }
+
+  .patient {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+  }
+
+  .patient h3 {
+    margin: 0 0 10px 0;
+    color: #444;
+  }
+
+  .patient p {
+    margin: 5px 0;
+    color: #666;
+    margin-top: 10px
+  }
+
+  .btn-group {
+    margin-top: 10px;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 8px 16px;
+    margin-right: 10px;
+    background-color: #1976d2;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+  }
+
+  .btn:hover {
+    background-color: #135ba1;
+  }
+
+  .logout {
+    text-align: right;
+    margin-bottom: 10px;
+  }
+
+  .logout a {
+    color: #1976d2;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .logout a:hover {
+    text-decoration: underline;
+  }
+  .button-row {
+    display: flex;
+    gap: 10px;  /* Space between buttons */
+    margin-bottom: 15px;  /* Space below button row */
+  }

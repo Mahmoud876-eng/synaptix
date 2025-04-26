@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HOPE</title>
+  
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+  
+</head>
+<body>
+  <header>
+    <h1>register</h1>
+  </header>
+
+  <form action="/register" method="post" class="container">
+    <h2>register</h2>
+    <label for="mail">Email:</label>
+    <input type="email"  autofocus  id="mail" name="mail" required />
+    <label for="name">Username:</label>
+    <input type="text" id="name" name="username" required />
+    <label for="statues">statues</label>
+    <select id="statues" name="status">
+      <option value="caregiver">caregiver</option>
+      <option value="doctor">doctor</option>
+    </select>
+    
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required />
+
+    <button type="submit">Login</button>
+  </form>
+
+    
+      <!-- Login Form -->
+        
+        
+ 
+  
+
+
+  <!-- Medication Entry Form -->
+  
+</body>
+</html>

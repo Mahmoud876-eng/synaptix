@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stylish Popup</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/pop_up.css') }}">
+</head>
+<body>
+
+<!-- Button to open the modal -->
+<button class="open-btn" onclick="openModal()">Open Stylish Popup</button>
+
+<!-- Modal -->
+<div id="popupModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <h2>Welcome!</h2>
+    <p>This is a more stylish and robust modal popup with a blue color theme.</p>
+    <button class="modal-button" onclick="closeModal()">Got it!</button>
+  </div>
+</div>
+
+<script>
+  // Function to open the modal
+  function openModal() {
+    document.getElementById("popupModal").style.display = "flex";
+  }
+
+  // Function to close the modal
+  function closeModal() {
+    document.getElementById("popupModal").style.display = "none";
+  }
+
+  // Close the modal if the user clicks outside the modal
+  window.onclick = function(event) {
+    if (event.target == document.getElementById("popupModal")) {
+      closeModal();
+    }
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Doctor Portal - Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/hom_d.css') }}">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">Doctor Portal</div>
+        <div class="nav-links">
+            <div class="button-row">
+                <form action="/">
+                    <button type="submit" class="btnless">Home</button>
+                </form>
+                <form action="/dashboard">
+                    <button type="submit" class="btnless">Dashboard</button>
+                </form>
+                <form action="/logout" method="POST">
+                    <button type="submit" class="btnless">Logout</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <header>
+        <h1>Welcome back, {{ username }} 👋</h1>
+        <p>We’re here to help you manage your patients’ care efficiently.</p>
+        <form action="/doctor">
+            <button type="submit" class="btn">Go to Dashboard</button>
+        </form>
+    </header>
+
+    <!-- Motivational Message -->
+    <section class="motivational">
+        "Your expertise makes a difference. Stay organized—for them, ...<br> they rely on your care."
+    </section>
+
+    <!-- Medicines Section -->
+    
+
+    <!-- About Section -->
+    <section class="section">
+        <h2>About Your Portal</h2>
+        <div class="about">
+            <img src="https://via.placeholder.com/400x300?text=Doctor+Support" alt="Doctor Support Image">
+            <div class="about-text">
+                Welcome to your Doctor Portal, {{ username }}. Use this platform to manage medications, set reminders, and ensure your patients receive the best care possible.
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section">
+        <h2>Your Tools</h2>
+        <div class="features">
+            <div class="feature-card button-card">
+                <form action="/doctor">
+                    <button>
+                        <h3>Medication Management</h3>
+                        <p>Track and update medication schedules for your patients with ease.</p>
+                    </button>
+                </form>
+            </div>
+            <div class="feature-card button-card">
+                <form action="/register/patient">
+                    <button>
+                        <h3>add a patient</h3>
+                        <p>Access real-time updates and patient care schedules at a glance.</p>
+                    </button>
+                                
+            </div>
+            <div class="feature-card button-card">
+                <form action="/dashboard">
+                    <button>
+                        <h3>manage a patient</h3>
+                        <p>Access real-time updates and patient care schedules at a glance.</p>
+                    </button>
+                                
+            </div>        
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section">
+        <h2>What Doctors Say</h2>
+        <div class="testimonials">
+            <div class="testimonial">
+                “This portal has streamlined my workflow significantly.”  
+                <br><br>– Dr. Ahmed R.
+            </div>
+            <div class="testimonial">
+                “Managing patient care has never been easier.”  
+                <br><br>– Dr. Fatima S.
+            </div>
+            <div class="testimonial">
+                “The reminder system keeps me on track every day.”  
+                <br><br>– Dr. Omar K.
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        © 2025 Doctor Portal | Need help? Contact us at <a href="mailto:support@doctorportal.org">support@doctorportal.org</a>
+    </footer>
+</body>
+</html>
