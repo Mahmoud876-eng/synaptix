@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cyber Deaf – Flyer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Raleway', sans-serif;
+      background: #fdfcfb;
+      color: #222;
+      padding: 2rem;
+    }
+
+    .flyer-container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #ffffff;
+      border: 2px solid #eee;
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 1rem;
+    }
+
+    .header h1 {
+      font-size: 2rem;
+      color: #333;
+    }
+
+    .qr-code {
+      width: 100px;
+      height: 100px;
+      background-image: url('https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://example.com');
+      background-size: cover;
+      border-radius: 8px;
+    }
+
+    .section {
+      margin-top: 2rem;
+    }
+
+    .section h2 {
+      color: #444;
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
+      border-left: 4px solid #ff4081;
+      padding-left: 0.5rem;
+    }
+
+    .section p {
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    .slogan {
+      font-weight: 700;
+      font-size: 1.6rem;
+      text-align: center;
+      color: #ff4081;
+      margin-top: 2rem;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #999;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="flyer-container">
+    <div class="header">
+      <h1>Cyber Deaf</h1>
+      <div class="qr-code"></div>
+    </div>
+
+    <div class="section">
+      <h2>Why Cyber Deaf?</h2>
+      <p>Cyber Deaf was created to help bridge the gap between deaf individuals and the  world. Our mission is to ensure that everyone, regardless of hearing ability, can communicate, access services, and be part of the online community with ease and dignity.</p>
+    </div>
+
+    <div class="section">
+      <h2>Our Services</h2>
+      <p>We offer a range of services tailored to support deaf users, including:</p>
+      <ul>
+        <li>Text-to-speech conversion</li>
+        <li>Sign language translation through video</li>
+      
+        <li>Community chat features</li>
+        <li>Support for medical communication</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Contact Us</h2>
+      <p>Email: contact@cyberdeaf.org<br>
+         Phone: +216 99469015<br>
+         Location: Kairouan, Tunisia</p>
+    </div>
+
+    <div class="slogan">
+      "Everybody deserves to be heard."
+    </div>
+
+    <div class="footer">
+      &copy; 2025 Cyber Deaf. All rights reserved.
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Professor's Student Dashboard</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/hom_d.css') }}">
+  </style>
+</head>
+<body>
+  <h1>Professor John's Student Dashboard</h1>
+
+  <div class="dashboard">
+    <!-- Student 1 -->
+     {% for student in students %}
+      <div class="student-card">
+        
+        <div  class="feature-card button-card">
+          <h3>{{student.username}} </h3>
+          <form action="/professor" methode="POST">
+            <button>
+              <p><strong>ID:</strong> 202301</p>
+              <p><strong>Email:</strong> {{student.email}}</p>
+              <p><strong>Age:</strong> 20</p>
+              <p><strong>Grade:</strong> A</p>
+            </button>
+          </form>
+        </div>
+        <p> </p>
+      </div>
+
+     {% endfor %}
+    
+    
+
+    <!-- Add more students as needed -->
+  </div>
+</body>
+</html>

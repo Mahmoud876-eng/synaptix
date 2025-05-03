@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Text Input | Cyber Deaf</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      color: #fff;
+      position: relative;
+    }
+
+    .home-btn {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      padding: 0.5rem 1rem;
+      background: #fff;
+      color: #667eea;
+      font-weight: bold;
+      font-size: 0.85rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      z-index: 999;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .home-btn:hover {
+      background: #f3f3ff;
+      transform: scale(1.05);
+    }
+
+    .text-container {
+      background: rgba(255, 255, 255, 0.08);
+      padding: 2rem;
+      border-radius: 20px;
+      max-width: 600px;
+      width: 100%;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+      animation: fadeIn 1s ease;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      font-weight: 600;
+    }
+
+    textarea {
+      width: 100%;
+      height: 200px;
+      padding: 1rem;
+      font-size: 1rem;
+      border-radius: 12px;
+      border: none;
+      resize: vertical;
+      outline: none;
+      background: rgba(255, 255, 255, 0.15);
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    textarea::placeholder {
+      color: #ddd;
+    }
+
+    .btn {
+      margin-top: 1.2rem;
+      padding: 0.8rem 1.6rem;
+      background: #fff;
+      color: #667eea;
+      font-weight: bold;
+      font-size: 1rem;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      display: block;
+      margin-left: auto;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .btn:hover {
+      background: #f3f3ff;
+      transform: scale(1.02);
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <a href="/home_student" class="home-btn">Home</a>
+
+  <div class="text-container">
+    <h2>Write Your Text Below</h2>
+    <form action="/talk" method="POST">
+      <textarea placeholder="Start typing here..." name="userText" required></textarea>
+      <button class="btn" type="submit">Submit</button>
+    </form>
+  </div>
+
+</body>
+</html>

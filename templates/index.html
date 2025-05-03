@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cyber Deaf - Welcome</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+      font-family: 'Poppins', sans-serif;
+      color: white;
+    }
+
+    body {
+      min-height: 100vh;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    body::before {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: conic-gradient(from 0deg, #ff0055, #ffcc00, #00ccff, #ff0055);
+      animation: rotateBG 20s linear infinite;
+      filter: blur(60px);
+      z-index: -1;
+    }
+
+    @keyframes rotateBG {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      backdrop-filter: blur(5px);
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 1rem;
+    }
+
+    .logo img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+
+    .logo span {
+      font-size: 2rem;
+      font-weight: 600;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      animation: fadeInDown 1s ease-out;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      animation: fadeInDown 1.2s ease-out;
+    }
+
+    .btn-group {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      animation: fadeInUp 1.4s ease-out;
+    }
+
+    .btn {
+      background: #fff;
+      color: #667eea;
+      padding: 0.8rem 1.6rem;
+      border: none;
+      border-radius: 2rem;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+      text-decoration: none;
+      transition: transform 0.3s, background 0.3s;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      background: #f3f3ff;
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .login-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      padding: 10px 20px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 8px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .login-btn:hover {
+      background: rgba(255, 255, 255, 0.2);
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <a href="/login" class="login-btn">Login</a>
+
+  <div class="logo">
+    <img src="static/img/logo1.jpg" alt="Logo">
+    <span>Silent Learn</span>
+  </div>
+
+  <h1>Welcome to Cyber Deaf</h1>
+  <p>Choose your role to continue</p>
+
+  <div class="btn-group">
+    <a href="/register" class="btn">🎓 Student</a>
+    <a href="/register/professor" class="btn">👨‍🏫 Professor</a>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cyber Deaf | Business Card</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .card {
+      background: #F5F5DC;
+      width: 350px;
+      height: 200px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      display: flex;
+      flex-direction: column;
+      padding: 1.5rem;
+      justify-content: space-between;
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: #4a4a4a;
+    }
+
+    .qr img {
+      width: 60px;
+      height: 60px;
+    }
+
+    .info {
+      font-size: 0.85rem;
+      color: #555;
+      line-height: 1.4;
+    }
+
+    .footer {
+      font-size: 0.75rem;
+      color: #888;
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="card-header">
+      <div class="logo">Cyber Deaf</div>
+      <div class="qr">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=60x60&data=https://cyberdeaf.org" alt="QR Code">
+      </div>
+    </div>
+    <div class="info">
+      A project that helps deaf people connect, communicate and be heard.<br><br>
+      📧 Email: contact@cyberdeaf.org<br>
+      🌐 Website: www.cyberdeaf.org<br>
+      📍 Location: Kairouan, Tunisia
+    </div>
+    <div class="footer">
+      Everybody deserves to be heard
+    </div>
+  </div>
+</body>
+</html>

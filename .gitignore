@@ -1,0 +1,11 @@
+variable.py
+__pycache__/
+firebaseServiceAccount.json
+firebase_mahmoud.json
+*.ini
+AVD*.conf
+*.history
+*.keyring
+*.condarc
+emulator_console_auth_token
+.venv
